@@ -1,0 +1,128 @@
+body {
+  background: linear-gradient(135deg, #2d2a4a 0%, #4e3c6d 100%);
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 500px;
+  margin: 60px auto 0 auto;
+  background: rgba(40, 30, 60, 0.85);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 32px 24px 40px 24px;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 32px;
+  color: #ffb6e6;
+  text-shadow: 0 0 8px #ffb6e6, 0 0 16px #7ecbff;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.cute-btn {
+  background: linear-gradient(90deg, #ffb6e6 0%, #7ecbff 100%);
+  color: #2d2a4a;
+  border: none;
+  border-radius: 16px;
+  padding: 16px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 8px 0 #7ecbff55;
+  transition: transform 0.1s, box-shadow 0.1s;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.cute-btn:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 4px 16px 0 #ffb6e6aa;
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 32px;
+}
+.card {
+  background: linear-gradient(120deg, #ffb6e6 60%, #7ecbff 100%);
+  color: #2d2a4a;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px 0 #7ecbff55;
+  padding: 24px 20px;
+  min-width: 220px;
+  max-width: 260px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  text-align: left;
+}
+.card .date {
+  display: block;
+  font-size: 0.95rem;
+  color: #4e3c6d;
+  margin-top: 10px;
+  font-style: italic;
+}
+.cute-list {
+  margin: 32px auto 0 auto;
+  padding: 0;
+  list-style: none;
+  max-width: 350px;
+}
+.cute-list li {
+  background: linear-gradient(90deg, #ffb6e6 0%, #7ecbff 100%);
+  color: #2d2a4a;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  padding: 14px 18px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px 0 #7ecbff55;
+  position: relative;
+  transition: transform 0.1s;
+}
+.cute-list li::before {
+  content: '★ ';
+  color: #ffb6e6;
+  font-size: 1.2rem;
+  margin-right: 6px;
+}
+.cute-list li:hover {
+  transform: scale(1.04) rotate(-1deg);
+}
+.love-hate {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 32px;
+}
+.love-hate-list {
+  background: linear-gradient(120deg, #7ecbff 60%, #ffb6e6 100%);
+  color: #2d2a4a;
+  border-radius: 16px;
+  padding: 20px 18px;
+  min-width: 180px;
+  box-shadow: 0 2px 8px 0 #ffb6e655;
+}
+.love-hate-list h2 {
+  margin-top: 0;
+  color: #4e3c6d;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+.love-hate-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.love-hate-list li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
